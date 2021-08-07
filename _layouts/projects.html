@@ -1,0 +1,44 @@
+---
+layout: "main"
+---
+
+<div class="container">
+    <div class="row container-top-row">
+        <div class="col-sm-12">
+            <h1>Projects</h1>
+            <h2>Projects are sorted chronologically. Use the tags below to filter the results.
+            </h2>
+        </div> 
+        <div class="filterbuttons" id="myBtnContainer">
+            <button class="btn filter-button clicked" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn filter-button " onclick="filterSelection('arts')"> Arts</button>
+            <button class="btn filter-button " onclick="filterSelection('sports')"> Sports</button>
+            <button class="btn filter-button " onclick="filterSelection('baseball')"> Baseball</button>
+            <button class="btn filter-button " onclick="filterSelection('basketball')"> Basketball</button>
+            <button class="btn filter-button " onclick="filterSelection('hockey')"> Hockey</button>
+            <button class="btn filter-button " onclick="filterSelection('politics')"> Politics</button>
+        </div>  
+    </div>
+    <div class="container-float card-deck">
+    {% for post in site.posts %}
+        <div class="col-sm-4 filterDiv {{post.tags}}">
+            <div class="card">
+                <a href="/{{post.permalink}}.html">
+                    <img class="card-img-top" src="/post-assets/{{post.short-hand}}/card.jpg" alt="Card image cap" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title" id="card-title">{{post.title}}</h5>
+                        <p class="card-text" id="card-subtitle">{{post.subtitle}}</p>
+                        <p class="card-text" id="card-date"><small class="text-muted">{{post.date | date_to_string: "ordinal", "US"}}</small></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    <div class="row container-bot-row">
+        {% include footer.html %}
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="/js/projects/projectFilter.js"></script>

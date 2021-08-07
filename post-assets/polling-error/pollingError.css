@@ -1,0 +1,298 @@
+#top-slider {
+    width: 100%;
+}
+
+label {
+	display: block;
+	padding-top: 10px;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #6A93C0;
+	font-weight: 400;
+	text-align: center;
+}
+
+svg {
+
+	display: block;
+	margin: auto;
+
+}
+
+.rectangle:hover {
+
+	fill-opacity: 60%;
+
+}
+
+.chart-title {
+
+	display: block;
+
+}
+
+.chart-title {
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #6A93C0;
+	font-weight: 700;
+	text-align: center;
+	line-height: 25px;
+	margin: 0px;
+
+}
+
+.chart-sub-title {
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: px;
+	color: #6A93C0;
+	font-weight: 700;
+	text-align: center;
+	line-height: 25px;
+	margin: 0px;
+
+}
+
+.chart-buttons {
+
+	display: flex;
+	justify-content: center;
+
+}
+
+.chart-button {
+	background-color: #6A93C0;
+	border: none;
+	border-radius: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	color: white;
+	font-weight: 600;
+	padding: 10px 10px;
+	text-align: center;
+	width: 100px;
+	margin: 10px;
+}
+
+/* Style for Custom Tooltip */
+div.tooltip {   
+	position: absolute;           
+	text-align: center;           
+	width: 60px;                  
+	height: 28px;                 
+	padding: 2px;             
+	font: 12px sans-serif;        
+	background: white;   
+	border: 0px;      
+	border-radius: 8px;           
+	pointer-events: none;         
+}
+
+p.under-slider {
+	margin: 0px, 10px;
+	padding: 0;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	font-weight: 700;
+	color: #6A93C0;
+	display: flex;
+	justify-content: center;
+}
+
+.slidecontainer {
+	padding: 20px;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 50%;
+	height: 15px;
+	margin: auto;
+	border-radius: 5px;  
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	display: flex;
+  }
+  
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%; 
+	background: #6A93C0;
+	cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #6A93C0;
+	cursor: pointer;
+}
+
+#vote-totals {
+	margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#vote-totals h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media only screen and (min-width:1000px){
+
+#range.under-slider {
+    margin: auto
+}
+
+label {
+	display: block;
+	padding-top: 10px;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	color: #6A93C0;
+	font-weight: 400;
+	text-align: center;
+}
+
+.chart-block {
+	display: flex;
+}
+
+#vote-totals {
+	margin: auto;
+	display: block;
+}
+
+#vote-totals h1{
+	text-align: left;
+}
+
+/* Style for Custom Tooltip */
+div.tooltip {   
+	position: absolute;           
+	text-align: center;           
+	width: 60px;                  
+	height: 28px;                 
+	padding: 2px;             
+	font: 12px sans-serif;        
+	background: white;   
+	border: 0px;      
+	border-radius: 8px;           
+	pointer-events: none;         
+}
+
+p.under-slider {
+	margin: 0px, 10px;
+	padding: 0;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	font-weight: 700;
+	color: #6A93C0;
+	display: flex;
+	justify-content: center;
+}
+
+.slidecontainer {
+	padding: 20px;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 50%;
+	height: 15px;
+	margin: auto;
+	border-radius: 5px;  
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	display: flex;
+  }
+  
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%; 
+	background: #6A93C0;
+	cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #6A93C0;
+	cursor: pointer;
+}
+
+
+.chart-title {
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	color: #6A93C0;
+	font-weight: 700;
+	text-align: center;
+	line-height: 25px;
+	margin: 0px;
+
+}
+
+.chart-sub-title {
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: blue;
+	font-weight: 700;
+	text-align: center;
+	line-height: 25px;
+	margin: 0px;
+
+}
+
+
+.chart-buttons {
+
+	display: flex;
+	justify-content: center;
+
+}
+
+#checkbox
+{
+    padding: 30px;
+}
+
+.chart-button {
+	background-color: #6A93C0;
+	border: none;
+	border-radius: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: white;
+	font-weight: 500;
+	padding: 15px 32px;
+	text-align: center;
+	width: 200px;
+	margin: 20px;
+  }
+
+}

@@ -1,0 +1,351 @@
+* {
+	text-decoration: none;
+}
+
+body {
+	padding-top: 80px;
+	background-color: #F6F6F6;
+	
+}
+
+/* ---------- NAVBAR -----------*/
+
+nav a h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #6A93C0;
+    height: 100%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+nav a h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #6A93C0;
+    height: 100%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+nav a h1:hover {
+    color: #37597e;
+}
+
+.brand-name-desk {
+    display: none;
+}
+.brand-name-mobile {
+    display: block;
+}
+
+@media only screen and (min-width:577px){
+    .brand-name-desk {
+        display: block;
+    }
+    .brand-name-mobile {
+        display: none;
+    }
+    nav a h1 {
+        font-size: 24px;
+    }
+    nav a h2 {
+        font-size: 24px;
+    }
+}
+
+/* -----x---- NAVBAR -----x-----*/
+
+/* ---------- HOME CONTAINER -----------*/
+
+.container-top-row {
+    background-color:  #F6F6F6;
+}
+
+.container-top-row h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #6A93C0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container-top-row h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #6A93C0;
+    text-align: center;
+}
+
+.card-deck {
+    background-color: white;
+}
+
+.container-bot-row {
+    background-color: #6A93C0;
+}
+
+.container-bot-row a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: auto;
+}
+
+.container-bot-row a p{
+    margin: auto 0;
+}
+
+.container-bot-row {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    height: 120px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@media only screen and (min-width:577px){
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .container-top-row {
+        background-color: white;
+        border-radius: 20px 20px 0px 0px ;
+    }
+    .container-bot-row {
+        border-radius: 0px 0px 20px 20px;
+        height: 100px;
+    }
+    .container-bot-row a.left {
+        justify-content: flex-end;
+    }
+    .container-bot-row a.center {
+        justify-content: center;
+    }
+    .container-bot-row a.right {
+        justify-content: flex-start;
+    }
+    .container-top-row h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        color: #6A93C0;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .container-top-row h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: #6A93C0;
+        text-align: center;
+    }
+}
+
+/* -----x---- HOME CONTAINER -----x-----*/
+
+/* ---------- CARDS -----------*/
+
+.card-deck {
+    background-color:  #F6F6F6;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Poppins', sans-serif;
+    color: #6A93C0;
+    margin: 10px;
+    height: 410px;
+}
+
+.card-title {
+    color: #6A93C0;
+}
+
+.card-text {
+    color: #6A93C0;
+}
+
+.card-body {
+    height: 210px;
+}
+
+#card-title {
+    height: 40px;
+}
+
+#card-subtitle {
+    height: 80px;
+    font-size: 15px;
+}
+
+.card a {
+    cursor: pointer;
+}
+
+.card img {
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+@media only screen and (min-width:577px){
+    .card {
+        margin: 20px;
+    }
+
+    .card-deck {
+        background-color: white;
+        padding: 20px 50px 40px;
+    }
+}
+
+/* ----x----- CARDS -----x-----*/
+
+/* ---------- PROJECT -----------*/
+
+.container {
+    overflow: hidden;
+}
+  
+.filterDiv {
+    display: none; /* Hidden by default */
+}
+  
+  /* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+.filterbuttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.filter-button {
+    margin: 5px 5px;
+    font-family: 'Poppins', sans-serif;
+    color: #6A93C0;
+    background-color: #eeeeee;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#myBtnContainer {
+    width: 100%;
+}
+  
+@media only screen and (min-width:577px){
+    .filterbuttons {
+        margin: auto;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .filter-button {
+        font-family: 'Poppins', sans-serif;
+        color: #6A93C0;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+      
+      /* Add a light grey background on mouse-over */
+    .filter-button:hover {
+        background-color: #ddd;
+    }
+      
+      /* Add a dark background to the active button */
+    .filter-button.clicked {
+        background-color: #666;
+        color: white;
+    }
+
+    #myBtnContainer {
+        width: 50%;
+    }
+}
+
+/* ----x----- PROJECT -----x-----*/
+
+/* ---------- ARTICLE -----------*/
+.article-header {
+    font-family: 'Poppins', sans-serif;
+    color: #6A93C0;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.article-header h1 {
+    font-weight: 600;
+}
+
+.article-container {
+    font-family: 'Poppins', sans-serif;
+    color: #6A93C0;
+    padding: 15px;
+}
+
+.article-container p {
+    font-size: 15px;
+}
+
+.article-image {
+    background-color: #F6F6F6;
+    margin: 10px 20px;
+    width: 100%;
+}
+
+.article-image img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (min-width:577px){
+    .article-header {
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+        color: #6A93C0;
+        border-radius: 20px;
+        padding: 20px
+    }
+
+    .article-container {
+        border-radius: 20px 20px 0 0;
+        background-color: white;
+    }
+
+    .article-container p {
+        font-size: 16px;
+        margin: 10px 20px;
+    }
+    .article-image img {
+        width: auto;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
+        max-height: 700px;
+        background-color: #F6F6F6;
+
+    }
+
+}
+
+p img {
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    max-height: 700px;
+    margin: auto;
+}
+
+/* ----x----- ARTICLE -----x-----*/

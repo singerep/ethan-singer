@@ -1,0 +1,77 @@
+---
+layout: "main"
+article-one: "covid-votes"
+article-two: "polling-error"
+article-three: "baserunner-speed"
+---
+
+<div class="container">
+    <div class="row container-top-row">
+        <div class="col-sm-12">
+            <h1>What's up, I'm Ethan.</h1>
+            <h2>I'm an undergrad at Boston University interested in data science and visualization.<br>Checkout some of my favorite projects below.
+            </h2>
+        </div>
+    </div>
+    <div class="card-deck">
+        {% for post in site.posts %}
+        {% if post.short-hand == layout.article-one %}
+        <div class="card">
+            <a href="/{{post.permalink}}.html">
+                <img class="card-img-top" src="/post-assets/{{post.short-hand}}/card.jpg" alt="Card image cap" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title" id="card-title">{{post.title}}</h5>
+                    <p class="card-text" id="card-subtitle">{{post.subtitle}}</p>
+                    <p class="card-text" id="card-date"><small class="text-muted">{{post.date | date_to_string: "ordinal", "US"}}</small></p>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        {% for post in site.posts %}
+        {% if post.short-hand == layout.article-two %}
+        <div class="card">
+            <a href="/{{post.permalink}}.html">
+                <img class="card-img-top" src="/post-assets/{{post.short-hand}}/card.jpg" alt="Card image cap" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title" id="card-title">{{post.title}}</h5>
+                    <p class="card-text" id="card-subtitle">{{post.subtitle}}</p>
+                    <p class="card-text" id="card-date"><small class="text-muted">{{post.date | date_to_string: "ordinal", "US"}}</small></p>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+        
+        {% for post in site.posts %}
+        {% if post.short-hand == layout.article-three %}
+        <div class="card">
+            <a href="/{{post.permalink}}.html">
+                <img class="card-img-top" src="/post-assets/{{post.short-hand}}/card.jpg" alt="Card image cap" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title" id="card-title">{{post.title}}</h5>
+                    <p class="card-text" id="card-subtitle">{{post.subtitle}}</p>
+                    <p class="card-text" id="card-date"><small class="text-muted">{{post.date | date_to_string: "ordinal", "US"}}</small></p>
+                </div>
+            </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+        <!--
+            <div class="card">
+                    <a href="/articles/uRC/uRC.html">
+                        <img class="card-img-top" src="/articles/uRC/images/ump yelling.jpg" alt="Card image cap" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Umpire Runs Created</h5>
+                            <p class="card-text">An in depth analysis of how missed ball and strike calls can affect the game of baseball.</p>
+                            <p class="card-text"><small class="text-muted">5/19/20</small></p>
+                        </div>
+                    </a>
+            </div>
+        -->
+    </div>
+    <div class="row container-bot-row">
+        {% include footer.html %}
+    </div>
+</div>
